@@ -5,15 +5,18 @@ function searchResult(){
     type : 'GET',
     success :function(data){
       $('#update').empty();
-      var data = JSON.stringify(data);
-      var data = JSON.parse(data);
-
+      // Other Method for Parsing
+      // var data = JSON.stringify(data); // Converts JavaScript Objects into JSON text and stores it as strings
+      // //JSON.stringify() is to create a JSON string out of an object/array.
+      // var json_data = JSON.parse(data); // Converts strings of JSON text into JavaScript Objects
+      // //JSON.parse() is for "parsing" something that was received as JSON.
+      var json_data = JSON.parse(JSON.stringify(data));
       var output = '';
 
-      data.query.search.forEach(function(data){
-        var title = "<h2>"+ data.title +"</h2><br/>";
-        var snippet = "<p>"+ data.snippet +"</p>";
-        var url = "<a target='_BLANK' href='https://en.wikipedia.org/wiki/"+data.title+"'>";
+      json_data.query.search.forEach(function(json_data){
+        var title = "<h2>"+ json_data.title +"</h2><br/>";
+        var snippet = "<p>"+ json_data.snippet +"</p>";
+        var url = "<a target='_BLANK' href='https://en.wikipedia.org/wiki/"+json_data.title+"'>";
         var endUrl = "</a>";
         output += url+title+endUrl+snippet+"<hr/>";
       });
