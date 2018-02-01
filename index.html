@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Wikipedia Search</title>
+  </head>
+  <body>
+    <div class="container-fluid top">
+        <div class="row">
+            <div class="col-sm-12 text-center jumbotron top">
+                <h1>Wikipedia</h1>
+                <h2 id="weather">Live Search Results from Wikipedia</h2>
+                <hr class="short">
+                <div class="search_box">
+                  <input type="text" name="search" id="search" placeholder="Try Something Interesting">
+                  <br/>
+                  <button class="btn btn-primary" id="random">Article of the Day</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2" id="search_result">
+          <div id="update"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid embed-responsive embed-responsive-16by9">
+      <div class="row">
+        <iframe src="" frameborder="0" class="embed-responsive-item" width="100%" height="760"></iframe>
+      </div>
+    </div>
+    <div class="container footer">
+      <div class="row">
+        <div class="col-sm-8">
+          Developed by <a href="https://facebook.com/ihiteish" target="_BLANK">Hitesh Yadav</a> | API used from wikipedi.org
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

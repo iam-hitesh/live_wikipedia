@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Rammetto+One|Roboto|Slabo+27px|Source+Sans+Pro');
+
+/* font-family: 'Rammetto One', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+.top{
+  background: #667db6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:#fff;
+}
+h1{
+  font-family: 'Rammetto One', cursive;
+}
+h2{
+  font-family: 'Rammetto One', cursive;
+}
+#search{
+  width:600px;
+  padding:20px;
+  border:none;
+  border-bottom: 1px solid #fff;
+  margin:10px 0px;
+  background: #0082c8;  /* fallback for old browsers */
+  color:#fff;
+}
+hr.short {
+    width: 100px;
+    border-bottom: 2px solid #fff;
+}
+hr.below {
+    width: 50px;
+    border-bottom: 1px solid #fff;
+}
+.footer {
+  border-top: 1px dotted #0082c8;
+  padding:30px 0px;
+}
+a:hover{
+  text-decoration: none;
+}
+a:after{
+  text-decoration: none;
+}
+p{
+  font-family: 'Lato', sans-serif;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #f2f2f2;
+    opacity: 1; /* Firefox */
+}
