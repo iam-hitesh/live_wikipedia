@@ -53,3 +53,8 @@ p{
     color: #f2f2f2;
     opacity: 1; /* Firefox */
 }
+@media only screen and (max-width: 500px) {
+    #search{
+  width:90%;
+}
+}
